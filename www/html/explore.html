@@ -1,0 +1,18 @@
+<ons-page ons-show="updateToolbar('Explore')">
+
+        <div class="content">
+            <ons-list>
+                <ons-list-item tappable ng-repeat="url in urls track by $index">
+                    <div class="center">
+                        <div class="title">
+                           <ons-icon icon="ion-ios-world"></ons-icon>  
+                           <strong><a href={{url.location}} target="_blank" style="text-decoration:none;">{{url.name}}</a></strong>
+                        </div>
+                    </div>
+                </ons-list-item>
+            </ons-list>
+            <p class="after-list">
+                {{labelExplore}}
+            </p>
+        </div>
+</ons-page>
